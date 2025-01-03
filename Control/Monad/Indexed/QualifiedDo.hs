@@ -15,6 +15,7 @@ module Control.Monad.Indexed.QualifiedDo
   ) where
 
 import           Control.Monad.Indexed
+import           Control.Monad.Indexed.Fail
 import           Control.Monad.Indexed.Fix
 import qualified Prelude
 

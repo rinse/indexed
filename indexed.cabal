@@ -25,9 +25,10 @@ Library
   Exposed-modules:     
     Data.Functor.Indexed, 
     Control.Monad.Indexed, 
+    Control.Monad.Indexed.Fail,
     Control.Monad.Indexed.Fix, 
-    Control.Monad.Indexed.Trans,
-    Control.Monad.Indexed.QualifiedDo
+    Control.Monad.Indexed.QualifiedDo,
+    Control.Monad.Indexed.Trans
     Control.Comonad.Indexed
  default-language: Haskell98
  if impl(ghc >= 7.5)
