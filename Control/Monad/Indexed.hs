@@ -16,6 +16,7 @@ module Control.Monad.Indexed
   , IxMonad(..)
   , IxMonadZero(..)
   , IxMonadPlus(..)
+  , IxMonadFail(..)
   , ijoin, (>>>=), (=<<<)
   , iapIxMonad
   ) where
@@ -45,3 +46,6 @@ class IxMonad m => IxMonadZero m where
 
 class IxMonadZero m => IxMonadPlus m where
   implus :: m i j a -> m i j a -> m i j a
+
+class IxMonad m => IxMonadFail m where
+  ifail :: String -> m i i a
